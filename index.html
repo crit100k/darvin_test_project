@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veniam</title>
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon"
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -18,13 +21,15 @@
                     <a href="#" "><img src="img/logo.png" alt="logo.png" class="subheader_logo_img"></a>
                 </div>
                 <div class="subheader_contacts">
-                    <img src="icons/tele.png" alt="phone" class="subheader_icon">
-                    <div class="subheader_time">С 9:00 до 18:00</div>
-                    <a href="tel:+70000000000" class="subheader_phone_link">+7 (000) 000-00-00</a>
+                    <div class="subheader_icon"><img src="icons/tele.png" alt="phone" ></div>
+                    <div class="subheader__info">
+                        <div class="subheader_time">С 9:00 до 18:00</div>
+                         <a href="tel:+70000000000" class="subheader_phone_link">+7 (000) 000-00-00</a>
+                    </div>
                 </div>
                 <div class="subheader_buttons">
-                    <button class="callback">Перезвоните мне</button>
-                    <button class="feedback">Оставить заявку</button>
+                    <button class="button">Перезвоните мне</button>
+                    <button class="button">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -45,83 +50,103 @@
         </nav>
     </header>
 
-<div class="slider ">
-    <div class="slider_item"><img src="/img/slider_1.jpg" alt="" class="slider_img"></div>
-    <!-- <div class="slider_item"><img src="/img/slider_1.jpg" alt="" class="slider_img"></div>
-    <div class="slider_item"><img src="/img/slider_1.jpg" alt="" class="slider_img"></div> -->
-</div>
+    <section class="slider">
+        <div class="owl-carousel">
+            <div class="slider_item"><img src="img/slider_1.jpg" alt="1">
+                <div class="slider__content">
+                    <div class="slider__title">Найдите новую одежду</div>
+                    <div class="slider__subtitle">Обновите ваш гардероб к новому сезону!</div>
+                </div>
 
-<section class="main">
-    <div class="container">
-        <div class="main_wrapper">
-            <h1 class="main_header">Заголовок H1</h1>
-            <div class="main_text">
-                <p>Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент. В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники, книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев: цена, материал изготовления, сезонность, бренд.</p>
-        
-                <p>Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина. Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей. </p>
             </div>
+            <div class="slider_item"> <img src="img/slider_1.jpg" alt="2"></div>
+            <div class="slider_item"> <img src="img/slider_1.jpg" alt="3"></div>
         </div>
-    </div>
-</section>
-
-<section class="hits">
-    <div class="container">
-        <h2 class="hits_header">Хиты продаж</h2>
-        <div class="hits_wrapper">
-            <div class="hits_product">
-                <div class="hits_product_img">
-                    <img src="img/shirt1.jpg" alt="" >
+            <div class="slider_controls">
+                <div class="slider__arrow slider__arrow-left"> 
+                    <span class="icon-cheveron-left"></span>
                 </div>
-                <div class="hits_product_devider"></div>
-                <div class="hits_product_descr">
-                    <div class="hits_product_title"><a href="#" class="product_link">Плотная рубашка из эластичной
-                        джинсовой ткани</a></div>
-                    <div class="hits_product_price">5 999 ₽</div>
+                <div class="slider__arrow slider__arrow-rignt">
+                    <span class="icon-cheveron-right"></span>
                 </div>
             </div>
-
-            <div class="hits_product">
-                <div class="hits_product_img">
-                    <img src="img/t-shirt2.jpg" alt="">
-                </div>
-                <div class="hits_product_devider"></div>
-                <div class="hits_product_descr">
-                    <div class="hits_product_title"><a href="#" class="product_link">Футболка с заклепками</a></div>
-                    <div class="hits_product_price">5 999 ₽</div>
-                </div>
-            </div>
-
-            <div class="hits_product">
-                <div class="hits_product_img">
-                    <img src="img/t-shirt3.jpg" alt="">
-                </div>
-                <div class="hits_product_devider"></div>
-                <div class="hits_product_descr">
-                    <div class="hits_product_title"><a href="#" class="product_link">Футболка с эффектом разрывов</a></div>
-                    <div class="hits_product_price">5 999 ₽</div>
+    </section>
+    
+ 
+    <section class="main">
+        <div class="container">
+            <div class="main_wrapper">
+                <h1 class="main_header">Заголовок H1</h1>
+                <div class="main_text">
+                    <p>Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент. В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники, книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев: цена, материал изготовления, сезонность, бренд.</p>
+            
+                    <p>Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина. Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей. </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="map">
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f3930c1096c75dd1552df73fddb0b796d0c5a955b51cb137b14a856e8b764ad&amp;source=constructor" width="100%" height="617" frameborder="0"></iframe>
+    </section>
 
-    <div class="form">
-        <div class="form_header">Связаться с нами</div>
-        <div class="input_group">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel">
-            <input type="email" placeholder="Электронная почта">
-        </div>
-        <textarea name="form_message" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
-        <div class="form_policy">Согласен с 
-            <a href="#">политикой конфиденциальности</a>
-            <input type="checkbox" name="agree" id="123" checked>
-        </div>
-        <button class=form_button>Отправить</button>
-    </div>
-</section>
+    <section class="hits">
+        <div class="container">
+            <h2 class="hits_header">Хиты продаж</h2>
+            <div class="hits_wrapper">
+                <div class="hits_product">
+                    <div class="hits_product_img">
+                        <img src="img/shirt1.jpg" alt="" >
+                    </div>
+                    <div class="hits_product_devider"></div>
+                    <div class="hits_product_descr">
+                        <div class="hits_product_title"><a href="#" class="product_link">Плотная рубашка из эластичной
+                            джинсовой ткани</a></div>
+                        <div class="hits_product_price">5 999 ₽</div>
+                    </div>
+                </div>
 
+                <div class="hits_product">
+                    <div class="hits_product_img">
+                        <img src="img/t-shirt2.jpg" alt="">
+                    </div>
+                    <div class="hits_product_devider"></div>
+                    <div class="hits_product_descr">
+                        <div class="hits_product_title"><a href="#" class="product_link">Футболка с заклепками</a></div>
+                        <div class="hits_product_price">5 999 ₽</div>
+                    </div>
+                </div>
+
+                <div class="hits_product">
+                    <div class="hits_product_img">
+                        <img src="img/t-shirt3.jpg" alt="">
+                    </div>
+                    <div class="hits_product_devider"></div>
+                    <div class="hits_product_descr">
+                        <div class="hits_product_title"><a href="#" class="product_link">Футболка с эффектом разрывов</a></div>
+                        <div class="hits_product_price">5 999 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f3930c1096c75dd1552df73fddb0b796d0c5a955b51cb137b14a856e8b764ad&amp;source=constructor" width="100%" height="617" frameborder="0"></iframe>
+
+        <form class="feedback-form">
+            <div class="form_header">Связаться с нами</div>
+
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel">
+                <input type="email" placeholder="Электронная почта">
+
+            <textarea name="form_message" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+            <div class="form_policy">Согласен с 
+                <a href="#">политикой конфиденциальности</a>
+                <input type="checkbox" name="agree" id="123" checked>
+            </div>
+            <button class=form_button>Отправить</button>
+        </form>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
