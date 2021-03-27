@@ -1,0 +1,54 @@
+.slider {
+    min-height: 550px;
+    position: relative;
+    &__item {
+        position: relative;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+    }
+    &__descr {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    &__controls {
+        position: absolute;
+        width: 163px;
+        height: 106px;
+        left: 0;
+        bottom: 0;
+    }
+    &__content {
+        color: #fff;
+        position: absolute;
+        bottom: 168px;
+    }
+    &__arrow {
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-color: #5d8ea8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        line-height: 0;
+        font-size: 30px;
+        z-index: 2;
+        transition: 0.3s all;
+        cursor: pointer;
+        &-left {
+        left: 0;
+        }
+        &-rignt {
+            right: 0;
+            margin-right: 60px;
+        } 
+        &:hover {
+            background-color: #fff; 
+            color: #5d8ea8;;
+        }   
+    }
+}

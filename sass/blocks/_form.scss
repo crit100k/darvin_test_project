@@ -1,0 +1,10 @@
+.feedback-form {
+    width: 380px;
+    height: 600px;
+    background-color: #e4e8eb;
+    padding: 36px 36px 28px 36px;
+    &__header {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}

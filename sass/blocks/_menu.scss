@@ -1,0 +1,25 @@
+.menu {
+    margin: 0;
+    padding: 23px 0;
+    &__item {
+        color: $main_color;
+        list-style: none;
+        display: inline-block;
+        margin: 0 27px 0 10px;
+        font-size: 15px;
+        color: $main_color;
+    }
+    &__link {
+        text-decoration: none;
+        color: $main_color;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+nav {
+    background-color: #3a4750;
+    height: 60px; 
+}
