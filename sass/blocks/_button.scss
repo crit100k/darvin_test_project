@@ -8,4 +8,13 @@
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
+    &-feed {
+        display: block;
+        margin: 28px auto 0 auto;
+        width: 128px;
+    
+    }
+    &:hover {
+        box-shadow: 0 0 5px #5d8ea8;
+    }
 }

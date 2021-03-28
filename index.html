@@ -48,23 +48,41 @@
 				</div>
 			</nav>
 	</header>
-				
+
 	<section class="slider">
 		<div class="owl-carousel">
-			<div class="slider_item"><img src="img/slider_1.jpg" alt="1">
+			<div class="slider_item">
+				<img src="img/slider_1.jpg" alt="1">
 				<div class="container"> 
 					<div class="slider__content">
 						<div class="slider__title">Найдите новую одежду</div>
 						<div class="slider__descr">Обновите ваш гардероб к новому сезону!</div>
 					</div>
 				</div>
-	
 			</div>
-			<div class="slider__item"> <img src="img/slider_1.jpg" alt="2"></div>
-			<div class="slider__item"> <img src="img/slider_1.jpg" alt="3"></div>
+
+			<div class="slider__item"> 
+				<img src="img/slider_1.jpg" alt="2">
+				<div class="container"> 
+					<div class="slider__content">
+						<div class="slider__title">Найдите новую одежду2</div>
+						<div class="slider__descr">Обновите ваш гардероб к новому сезону!2</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider__item">
+				<img src="img/slider_1.jpg" alt="3">
+				<div class="container"> 
+					<div class="slider__content">
+						<div class="slider__title">Найдите новую одежду3</div>
+						<div class="slider__descr">Обновите ваш гардероб к новому сезону!3</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
-		<div class="container">
+		<div class="container"> 
 			<div class="slider__controls">
 				<div class="slider__arrow slider__arrow-left"> 
 					<span class="icon-cheveron-left"></span>
@@ -98,33 +116,33 @@
 					<div class="product-preview__img">
 						<img src="img/shirt1.jpg" alt="" >
 					</div>
-					<div class="product-preview__devider"></div>
+					<hr>
 					<div class="product-preview__descr">
-						<div class="product-preview__title"><a href="#" class="product-preview__link">Плотная рубашка из эластичной
+						<div class="product-preview__name"><a href="#" class="product-preview__link">Плотная рубашка из эластичной
 							джинсовой ткани</a></div>
 						<div class="product-preview__price">5 999 ₽</div>
 					</div>
 				</div>
 
-				<div class="hits_product">
-					<div class="hits_product_img">
+				<div class="product-preview">
+					<div class="product-preview__img">
 						<img src="img/t-shirt2.jpg" alt="">
 					</div>
-					<div class="hits_product_devider"></div>
-					<div class="hits_product_descr">
-						<div class="hits_product_title"><a href="#" class="product_link">Футболка с заклепками</a></div>
-						<div class="hits_product_price">5 999 ₽</div>
+					<hr>
+					<div class="product-preview__descr">
+						<div class="product-preview__name"><a href="#" class="product-preview__link">Футболка с заклепками</a></div>
+						<div class="product-preview__price">5 999 ₽</div>
 					</div>
 				</div>
 
-				<div class="hits_product">
-					<div class="hits_product_img">
+				<div class="product-preview">
+					<div class="product-preview__img">
 						<img src="img/t-shirt3.jpg" alt="">
 					</div>
-					<div class="hits_product_devider"></div>
-					<div class="hits_product_descr">
-						<div class="hits_product_title"><a href="#" class="product_link">Футболка с эффектом разрывов</a></div>
-						<div class="hits_product_price">5 999 ₽</div>
+					<hr>
+					<div class="product-preview__descr">
+						<div class="product-preview__name"><a href="#" class="product-preview__link">Футболка с эффектом разрывов</a></div>
+						<div class="product-preview__price">5 999 ₽</div>
 					</div>
 				</div>
 			</div>
@@ -132,21 +150,31 @@
 	</section>
 
 	<section class="map">
-		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f3930c1096c75dd1552df73fddb0b796d0c5a955b51cb137b14a856e8b764ad&amp;source=constructor" width="100%" height="617" frameborder="0"></iframe>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f3930c1096c75dd1552df73fddb0b796d0c5a955b51cb137b14a856e8b764ad&amp;width=100%25&amp;height=724&amp;lang=ru_RU&amp;scroll=false"></script>
 
 		<form class="feedback-form">
 			<div class="feedback-form__header">Связаться с нами</div>
 
-				<input type="text" placeholder="Ваше имя">
-				<input type="text">
-				<input type="email" placeholder="Электронная почта">
+				<input name="name" type="text" placeholder="Ваше имя">
+				<input name="phone" type="text" placeholder="Ваш телефон">
+				<input name="email" type="email" placeholder="Электронная почта">
 
-				<textarea name="form_message" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+				<textarea name="message" cols="35" rows="10" placeholder="Текст сообщения"></textarea>
 
-			<div class="feedback-form__policy">Согласен с 
+
+
+			<!-- <div class="feedback-form__policy">Согласен с 
 				<a href="#">политикой конфиденциальности</a>
-				<input type="checkbox" name="agree" id="123" checked>
-			</div>
+				<input class="feedback-form__checkbox" type="checkbox" name="agree" checked>
+			</div> -->
+
+			<label class="feedback-form__checkbox">
+				<span class="feedback-form__policy-text">Согласен с </span>
+				<a class="feedback-form__policy-link" href="#">политикой конфиденциальности</a>
+				<input  checked type="checkbox" name="accept" required value="-1"/>
+				<span class="test"></span>
+			</label>
+
 			<button class="button button-feed">Отправить</button>
 		</form>
 	</section>

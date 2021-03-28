@@ -10,6 +10,10 @@ $(document).ready(function(){
         autoplay: false,
         autoplayTimeout: 5000,
         dots:false,
+        // nav: true,
+        // navText:["",""],
+        // navClass: ["slider__arrow-left","slider__arrow-right"],
+        // navContainerClass: "slider__controls"
     });
 
     next.on("click", ()=>{

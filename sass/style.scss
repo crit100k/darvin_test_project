@@ -13,6 +13,7 @@
 
 .map {
     min-height: 724px;
+    position: relative;
 }
 
 
@@ -23,3 +24,4 @@
 @import "blocks/maintext";
 @import "blocks/hits";
 @import "blocks/product-preview";
+@import "blocks/form"
