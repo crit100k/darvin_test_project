@@ -1,3 +1,8 @@
+nav {
+    background-color: #3a4750;
+    height: 60px; 
+}
+
 .menu {
     margin: 0;
     padding: 0;
@@ -11,6 +16,8 @@
         color: $main_color;
         padding: 0;
         margin-right: 13px;
+        transition-duration: 0.2s;
+        position: relative;
     }
     &__link {
         text-decoration: none;
@@ -30,14 +37,35 @@
     }
 }
 
-nav {
-    background-color: #3a4750;
-    height: 60px; 
-}
-
 .dropdown {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    width: 260px;
+    z-index: 10;
+    list-style-type: none;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    padding-left: 0px;
     &__item {
-        color: #3a4750;
+        border-bottom: 1px solid #cdcdcd;
+        a {
+            padding-left: 11px;
+            display: block;
+            line-height: 40px;
+            text-decoration: none;
+            color: #3a4750;
+            &:hover {
+                background-color: #5d8ea8;
+                color: #fff;
+            }
+        }
+        &:last-child {
+            border: none;
+        }
     }
+}
+.menu__item:hover .dropdown {
+    visibility: visible;
 }
