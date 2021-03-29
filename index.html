@@ -37,7 +37,14 @@
 				<div class="container">
 					<ul class="menu">
 						<li class="menu__item"><a href="" class="menu__link">О компании</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Каталог</a></li>
+						<li class="menu__item"><a href="" class="menu__link">Каталог</a>
+							<ul class="dropdown">
+								<li><a href="" class="dropdown__item">Пункт номер один</a></li>
+								<li><a href="" class="dropdown__item">Пункт номер два</a></li>
+								<li><a href="" class="dropdown__item">Пункт номер три</a></li>
+								<li><a href="" class="dropdown__item">Пункт номер четыре</a></li>
+							</ul>	
+						</li>
 						<li class="menu__item"><a href="" class="menu__link">Доставка и оплата</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Новости</a></li>
@@ -152,21 +159,14 @@
 	<section class="map">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f3930c1096c75dd1552df73fddb0b796d0c5a955b51cb137b14a856e8b764ad&amp;width=100%25&amp;height=724&amp;lang=ru_RU&amp;scroll=false"></script>
 
-		<form class="feedback-form">
+		<form class="feedback-form" id="feed">
 			<div class="feedback-form__header">Связаться с нами</div>
 
-				<input name="name" type="text" placeholder="Ваше имя">
-				<input name="phone" type="text" placeholder="Ваш телефон">
-				<input name="email" type="email" placeholder="Электронная почта">
+			<input name="name" type="text" placeholder="Ваше имя*">
+			<input name="phone" type="text" placeholder="Ваш телефон*">
+			<input name="email" type="email" placeholder="Электронная почта">
 
-				<textarea name="message" cols="35" rows="10" placeholder="Текст сообщения"></textarea>
-
-
-
-			<!-- <div class="feedback-form__policy">Согласен с 
-				<a href="#">политикой конфиденциальности</a>
-				<input class="feedback-form__checkbox" type="checkbox" name="agree" checked>
-			</div> -->
+			<textarea name="message" cols="35" rows="10" placeholder="Текст сообщения"></textarea>
 
 			<label class="feedback-form__checkbox">
 				<span class="feedback-form__policy-text">Согласен с </span>
@@ -181,6 +181,8 @@
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
