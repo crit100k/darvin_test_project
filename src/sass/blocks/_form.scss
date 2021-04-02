@@ -6,7 +6,7 @@
     min-height: 600px;
     background-color: #e4e8eb;
     padding: 36px 36px 28px 36px;
-    z-index: 1200;
+    z-index: 10;
     @media (max-width: 768px) {
         position: relative;
         width: 100%;
@@ -41,7 +41,6 @@
             font-size: 13px;
             color: #949ca0;
             line-height: 13px;
-            
         }
         &-link {
             font-size: 13px;
@@ -97,6 +96,11 @@
         color: $main_color;
         font-size: 38px;
         line-height: 21px;
+        @media (max-width:575px) {
+            top: 9px;
+            right: 9px;
+            color: #000;
+        }
     }
     &__subheader {
         margin-bottom: 15px;
@@ -127,6 +131,7 @@
         min-height: 380px;
         border-radius: 10px;
         top: 50%;
+        z-index: 100;
         right: 50%;
         transform: translate(50%, -50%);
         .feedback-form__header {
@@ -136,6 +141,7 @@
 
     &_enquire {
         min-height: 445px;
+        z-index: 100;
         border-radius: 10px;
         right: 50%;
         top: 50%;

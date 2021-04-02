@@ -66,7 +66,6 @@ $(document).ready(function(){
 
 // добавление в корзину
 
-
 // $('.product-preview__label').on('click', '.product-preview__label_active)', function() {
 // 	$(this)
 // 	  .addClass('product-preview__label_active').siblings().removeClass('catalog__tab_active')
@@ -79,28 +78,28 @@ $(document).ready(function(){
 			event.target.classList.add('product-preview__label_active');
 		}
 	});
-	
-
-
 
 
   // появление форм
 	$('[data-modal="callback"]').on('click', function() {
 		$('.overlay, #callback').fadeIn('slow');
-	
+		$("body").addClass("modal-open");
 	});
 
 	$('[data-modal="enquire"]').on('click', function() {
 		$('.overlay, #enquire').fadeIn('slow');
+		$("body").addClass("modal-open");
+		
 	});
+
 
 //закрытие форм
 	$('.feedback-form__close').on('click', function() {
 		$('.overlay, #callback, #enquire').fadeOut('slow');
+		$("body").removeClass("modal-open");
 	});
 
 // спойлер
-
   $( "#spoiler" ).click(function(){
 	$( ".contentHide" ).slideToggle();
 	let change = document.getElementById("spoiler");
@@ -143,11 +142,32 @@ $(document).ready(function(){
 				dots:true
 			},
 			991:{
-				items:2,
+				items:3,
 				nav:false,
-				dots:true
+				dots:false
 			}
 		}
     });
+
 })          
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('burger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('burger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
+})
+
+
 

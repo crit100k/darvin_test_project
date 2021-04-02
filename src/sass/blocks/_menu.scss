@@ -2,12 +2,15 @@ nav {
     background-color: #3a4750;
     height: 60px; 
     @media (max-width: 767px) {
-        display: none;
+       background-color: transparent;
     }
 }
 header {
     position: relative;
     @media (max-width: 767px) {
+        height: 100px;
+    }
+    @media (max-width: 575px) {
         height: 219px;
         border-bottom: 1px solid rgba(0,0,0,0.3);
     }
@@ -28,14 +31,47 @@ header {
         margin-bottom: 5px;
         display: block;
         background-color: #fff;
+        transition: 0.4s all;
     }
     @media (max-width: 767px) {
         display: block;
+    }
+    &_active {
+        span {
+            margin-bottom : 1px;
+            &:nth-child(1){
+                transform: translateY(7px) rotate(-45deg);
+            }
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                transform: translateY(4px) rotate(45deg);
+            }
+        }
     }
 }
 .menu {
     margin: 0;
     padding: 0;
+    @media (max-width: 767px) {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 0;
+        left: -100%;
+        width: 65%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0, .99);
+        transition: 0.6s all; 
+        z-index: 1000;
+        &_active {
+          left: 0;
+        }   
+    }
     &__item {
         color: $main_color;
         list-style: none;
@@ -48,6 +84,7 @@ header {
         @media (max-width: 991px) {
             font-size: 13px;
         }
+
         &:hover > a {
             background-color: #fff;
             color: #3a4750;
@@ -87,7 +124,12 @@ header {
             padding-left: 11px;
         }
         @media (max-width: 991px) {
-            padding: 0 12px 0 12px;
+            padding: 0 10px 0 10px;
+        }
+        @media (max-width: 767px) {
+            line-height: 35px;
+            padding: 0 10px 0 10px;
+            font-size: 17px;
         }
     }
 }

@@ -9,7 +9,7 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 11px 0 0 0;
+        padding: 11px 10px 0 0;
     }
     @media (max-width: 575px) {
         display: block;
@@ -29,7 +29,7 @@
         display: flex;
         justify-content:space-between;
         align-items:center;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             display: none;
         }
     }   
@@ -72,8 +72,9 @@
             padding-right: 40px;
         }
         @media (max-width: 575px) {
-            margin-top: 25px;
+            margin-top: 22px;
             padding-right: 0;
+            flex-direction: column;
         }
     }
 }

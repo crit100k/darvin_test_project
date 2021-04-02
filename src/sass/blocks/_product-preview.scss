@@ -14,7 +14,7 @@
         top: 16px;
         width: 46px;
         height: 46px;
-        background: #5d8ea8 url("../../icons/shopping_cart_plus_round.png") center center/auto no-repeat;
+        background: #5d8ea8 url("../icons/shopping_cart_plus_round.png") center center/auto no-repeat;
         border-radius: 6px;
         cursor: pointer;
         transition: 0.3s all;
@@ -23,7 +23,7 @@
         }
         &_active {
             border: 2px solid #b0bdc4;
-            background: #fff url("../../icons/shopping_cart_ok.png") center center/auto no-repeat; 
+            background: #fff url("../icons/shopping_cart_ok.png") center center/auto no-repeat; 
         }
     }
     &__img {
