@@ -1,0 +1,85 @@
+.slider {
+    min-height: 550px;
+    position: relative;
+    @media (max-width: 575px) {
+        display: none;
+    }
+    @media (max-width: 991px) {
+        min-height: 350px;
+    }
+    .container {
+        position: relative;
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        @media (max-width: 991px) {
+            font-size: 40px;
+        }
+        @media (max-width: 768px) {
+            font-size: 35px;
+        }
+    }
+    &__descr {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    &__controls {
+        position: absolute;
+        width: 163px;
+        height: 106px;
+        left: 0;
+        bottom: 5px;
+    }
+    &__content {
+        color: #fff;
+        position: absolute;
+        bottom: 168px;
+        @media (max-width: 768px) {
+            bottom: 120px;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-color: #5d8ea8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        line-height: 0;
+        font-size: 30px;
+        z-index: 2;
+        transition: 0.3s all;
+        cursor: pointer;
+        &-left {
+        left: 0;
+        }
+        &-rignt {
+            right: 0;
+            margin-right: 60px;
+        } 
+        &:hover {
+            background-color: #fff; 
+            color: #5d8ea8;;
+        }   
+    }
+
+}    
+
+#first .owl-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    @media (max-width: 991px) {
+        height: 350px;
+    }
+}

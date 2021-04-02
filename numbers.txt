@@ -1,0 +1,14 @@
+//callback
+
+function moveTo(startCoords, endCoords, callback) {
+    // do something
+    const dist = endCoords - startCoords;
+
+    callback(dist)
+
+    // do something 2
+}
+
+moveTo(1, 2, function(d) {
+    console.log(d);
+})
